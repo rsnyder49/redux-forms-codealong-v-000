@@ -16,6 +16,12 @@ handleChange(event) {
   });
 };
 
+mapDispatchToProps = dispatch => {
+  return {
+    addTodo: () => dispatch(<some action>)
+  }
+}
+
   render(){
   return(
     <div>
