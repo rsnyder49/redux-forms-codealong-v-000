@@ -18,7 +18,7 @@ handleChange(event) {
 
 mapDispatchToProps = dispatch => {
   return {
-    addTodo: () => dispatch(<some action>)
+    addTodo: formData => dispatch({ type: "ADD_TODO", payload: formData })
   }
 }
 
