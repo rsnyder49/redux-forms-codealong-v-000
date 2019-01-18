@@ -30,4 +30,4 @@ handleChange(event) {
   );
 }
 
-export default CreateTodo;
+export default connect(null, mapDispatchToProps)(CreateTodo);
