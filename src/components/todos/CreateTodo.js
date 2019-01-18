@@ -22,6 +22,11 @@ mapDispatchToProps = dispatch => {
   }
 }
 
+handleSubmit = event => {
+  event.preventDefault();
+  this.props.addTodo(this.state)
+}
+
   render(){
   return(
     <div>
